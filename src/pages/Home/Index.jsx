@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import SharonVideo from './../../assets/sharon_web.mp4'
+import SharonAudio from './../../assets/web_designer.mp3'
 
 const Home = () => {
   return (
     <main className='home-container'>
         <section className='home-container-nav'>
             <div className='home-container-nav-left'>
-            <svg width="200" height="auto" viewBox="0 0 670 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="150" height="auto" viewBox="0 0 670 187" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_12_7)">
                 <mask id="path-1-outside-1_12_7" maskUnits="userSpaceOnUse" x="4" y="4" width="654" height="170" fill="black">
                 <rect fill="white" x="4" y="4" width="654" height="170"/>
@@ -31,7 +33,9 @@ const Home = () => {
             </div>
             <div className='home-container-nav-right'>
                 <Link>
-                    <svg width="136" height="64" viewBox="0 0 136 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="120" height="64" 
+                    className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'
+                    viewBox="0 0 136 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_41_3)">
                         <mask id="path-1-outside-1_41_3" maskUnits="userSpaceOnUse" x="5" y="5" width="118" height="46" fill="black">
                         <rect fill="white" x="5" y="5" width="118" height="46"/>
@@ -55,7 +59,9 @@ const Home = () => {
                     </svg>
                 </Link>
                 <Link>
-                    <svg width="142" height="64" viewBox="0 0 142 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="130" height="64" 
+                    className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'
+                    viewBox="0 0 142 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_41_4)">
                         <mask id="path-1-outside-1_41_4" maskUnits="userSpaceOnUse" x="5" y="5" width="124" height="46" fill="black">
                         <rect fill="white" x="5" y="5" width="124" height="46"/>
@@ -79,7 +85,9 @@ const Home = () => {
                     </svg>
                 </Link>
                 <Link>
-                    <svg width="317" height="64" viewBox="0 0 317 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="270" height="auto" 
+                    className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'
+                    viewBox="0 0 317 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_41_5)">
                         <mask id="path-1-outside-1_41_5" maskUnits="userSpaceOnUse" x="5" y="5" width="299" height="46" fill="black">
                         <rect fill="white" x="5" y="5" width="299" height="46"/>
@@ -104,12 +112,8 @@ const Home = () => {
                 </Link>
             </div>
         </section>
-        <section className='home-container-one'>
-            <p className='home-container-p'>Exploring the<br/>
-            beauty of <br/>
-            typefaces in<br/>
-             web design,
-            </p>
+        <section className='video-container'>
+           <video src={SharonVideo} playsInline autoPlay muted loop></video>
         </section>
         <section className='home-container-two'>
 
