@@ -1,0 +1,110 @@
+:root {
+    --plyr-range-thumb-height: 16px;
+    --plyr-range-fill-background: #a5a3a0;
+    --plyr-range-track-height: 5px;
+}
+
+.plyr,
+.plyr * {
+    cursor: url('/public/icons/square-pointer.svg') 4 4, auto !important;
+}
+
+/* Slider Thumb */
+
+.plyr--full-ui input[type="range"] {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.plyr--full-ui input[type="range"]::-webkit-slider-thumb {
+    background-image: url('/icons/square.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.plyr--full-ui input[type="range"]::moz-range-thumb {
+    background-image: url('/icons/square.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.plyr--full-ui input[type="range"]:active::-webkit-slider-thumb,
+.plyr--full-ui input[type="range"]:active::-moz-range-thumb {
+    box-shadow: none !important;
+}
+
+.plyr--full-ui input[type="range"]:focus-visible::-webkit-slider-runnable-track {
+    outline: none !important;
+}
+
+.plyr--full-ui input[type="range"]:focus-visible::-moz-range-track {
+    outline: none !important;
+}
+
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control:focus-visible,
+.plyr--video .plyr__control[aria-expanded="true"]{
+    background-image: url('/icons/square-hover.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+}
+
+.plyr--video .plyr__control {
+    padding: 13px;
+    border-radius: 0 !important;
+}
+
+.plyr__control--overlaid:hover {
+    background-image: url('/icons/square.svg') !important;
+}
+
+.plyr__control--overlaid {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 24px;
+}
+
+.plyr__control--overlaid,
+.plyr__control[data-plyr="play"],
+.plyr--video .plyr__control {
+    border-radius: 0 !important;
+}
+
+.plyr__control--overlaid svg {
+    width: 32px;
+    height: 32px;
+}
+
+.plyr--video .plyr__control--overlaid:hover,
+.plyr--video .plyr__control--overlaid:focus {
+    background-image: url('/icons/square.svg') !important;
+    background-size: 24px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-color: transparent !important;
+}
+
+.plyr--video .plyr__control--overlaid:hover svg,
+.plyr--video .plyr__control--overlaid:focus svg {
+    opacity: 0 !important;
+}
+
+.plyr__control:focus,
+.plyr__control:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
