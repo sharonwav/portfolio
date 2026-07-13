@@ -10,7 +10,7 @@ const Home = () => {
             <p className='uppercase text-[#5a524b] text-sm lg:text-base'>
               sharon venicia
             </p>
-            <a href={cv} target='_blank' className="hover:text-[#5a524b] uppercase text-[#a5a3a0] text-sm lg:text-base">
+            <a href={cv} target='_blank' className="hover:text-[#5a524b] uppercase text-[#a5a3a0]">
               cv
             </a>
           </div>
